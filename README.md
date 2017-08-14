@@ -4,6 +4,7 @@ Build 30 things with vanilla ES6 JavaScript in 30 days with 30 tutorials
 No Frameworks × No Compilers × No Libraries × No Boilerplate
 
 Course by Wes Bos
+
 Grab the code at [JavaScript 30 Website](http://www.javascript30.com)
 
 ![JavaScript 30 Logo](https://github.com/DKMitt/javascript30/blob/master/assets/img/js30-logo.jpg)
