@@ -1,9 +1,9 @@
-# JavaScript 30   
+# JavaScript 30 Coding Challenge  
 Build 30 things with vanilla ES6 JavaScript in 30 days with 30 tutorials
 
 No Frameworks × No Compilers × No Libraries × No Boilerplate
 
-Course by Wes Bos
+by Wes Bos
 
 Grab the code at [JavaScript 30 Website](http://www.javascript30.com)
 
