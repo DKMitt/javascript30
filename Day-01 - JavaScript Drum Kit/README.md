@@ -1,6 +1,7 @@
-# JavaScript 30   Day 01 - JavaScript Drum Kit
+# JavaScript 30  - Day 01 - JavaScript Drum Kit
 
 by Wes Bos
+
 Grab the code at [JavaScript 30 Website](http://www.javascript30.com)
 
 
