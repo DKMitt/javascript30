@@ -20,7 +20,7 @@ These tutorials rely heavily upon browser APIs, most of which involve interactio
 
 ---
 
-Listed are the JavaScript 30 Challenges, and as i complete them i will be including a link to the working code.
+Listed are the JavaScript 30 Challenges, and as they are completed i will be including a link to the working code.
 
 
 | Day    | Course |
