@@ -1,4 +1,4 @@
-# JavaScript 30 -  
+# JavaScript 30   
 Build 30 things with vanilla ES6 JavaScript in 30 days with 30 tutorials
 
 No Frameworks × No Compilers × No Libraries × No Boilerplate
@@ -6,7 +6,7 @@ No Frameworks × No Compilers × No Libraries × No Boilerplate
 Course by Wes Bos
 Grab the code at [JavaScript 30 Website](http://www.javascript30.com)
 
-![JavaScript 30 Logo](https://github.com/DKMitt/javascript30/assets/img/js30-logo.jpg)
+![JavaScript 30 Logo](https://github.com/DKMitt/javascript30/blob/master/assets/img/js30-logo.jpg)
 
 ### Who is the JavaScript 30 Challenge For?
 
@@ -25,7 +25,7 @@ Listed are the JavaScript 30 Challenges, and as i complete them i will be includ
 
 | Day    | Course |
 | ------ | ------ |
-| Day 01 | [JavaScript Drum Kit](https://github.com/DKMitt/javascript30 "JavaScript Drum Kit") |
+| Day 01 | [JavaScript Drum Kit](https://github.com/DKMitt/javascript30/tree/master/Day-01%20-%20JavaScript%20Drum%20Kit "JavaScript Drum Kit") |
 | Day 02 | JavaScript and CSS Clock |
 | Day 03 | CSS Variables |
 | Day 04 | Array Cardio Day 1 |
