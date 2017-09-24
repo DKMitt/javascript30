@@ -27,7 +27,7 @@ Listed are the JavaScript 30 Challenges, and as they are completed i will be inc
 | Day    | Course |
 | ------ | ------ |
 | Day 01 | [JavaScript Drum Kit](https://github.com/DKMitt/javascript30/tree/master/Day-01-JavaScript-Drum-Kit "JavaScript Drum Kit") |
-| Day 02 | JavaScript and CSS Clock |
+| Day 02 | [JavaScript and CSS Clock](https://github.com/DKMitt/javascript30/tree/master/Day-02-CSS+JS-Clock "JavaScript and CSS Clock") |
 | Day 03 | CSS Variables |
 | Day 04 | Array Cardio Day 1 |
 | Day 05 | Flex Panel Gallery |
