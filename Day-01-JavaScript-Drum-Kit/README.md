@@ -2,7 +2,7 @@
 
 by Wes Bos
 
-Grab the code at [JavaScript 30 Website](http://www.javascript30.com)
+Take the challenge at [JavaScript 30 Website](http://www.javascript30.com)
 
 
 ### Day 01 - JavaScript Drum Kit
