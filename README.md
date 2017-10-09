@@ -32,7 +32,7 @@ Listed are the JavaScript 30 Challenges, and as they are completed i will be inc
 | Day 03 | [Playing with CSS Variables and JS](https://github.com/DKMitt/javascript30/tree/master/Day-03-CSS-Variables+JS "Playing with CSS Variables and JS") |
 | Day 04 | [Array Cardio Day 1](https://github.com/DKMitt/javascript30/tree/master/Day-04-Array-Cardio-Day-1 "Array Cardio Day 1")                             |
 | Day 05 | [Flex Panel Gallery](https://github.com/DKMitt/javascript30/tree/master/Day-05-Flex-Panel-Gallery "Flex Panel Gallery")                             |
-| Day 06 | Type Ahead                                                                                                                                          |
+| Day 06 | [Type Ahead](https://github.com/DKMitt/javascript30/tree/master/Day-06-Type-Ahead "Type Ahead")                                                     |
 | Day 07 | Array Cardio Day 2                                                                                                                                  |
 | Day 08 | Fun with HTML5 Canvas                                                                                                                               |
 | Day 09 | Dev Tools Domination                                                                                                                                |
