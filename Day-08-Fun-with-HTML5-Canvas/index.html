@@ -2,11 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML5 Canvas</title>
+  <title>FUN with HTML5 Canvas</title>
 </head>
 <body>
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
+	const canvas = document.querySelector('#draw');
+	
+	// bringing in the type of canvas '2d'
+	const ctx = canvas.getContext('2d');
+	
+	// asigning the canvas to be responsive to the window size
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	
+	// adjusting the color '#BASA55' and the end of the drawing tool with 'round' ends
+	ctx.strokeStyle = '#BADA55';
+	ctx.lineJoin = 'round';
+	ctx.lineCap = 'round';
+	ctx.lineWidth = 25;
+
+	// to create a blen mode enable below line
+	// ctx.globalCompositeOperation = 'multiply';
+	
+	// triggers drawing mode when clicked and mouse button is held down
+	let isDrawing = false;
+	
+	// starting and ending for drawing line
+	let lastX = 0;
+	let lastY = 0;
+	
+	// asigning variable hsl colors for drawing 
+	let hue = 0;
+
+	//
+	let direction = true;
+
+	// stops the function from running when the mouse button is not pushed down
+	function draw(event) {
+		if(!isDrawing) return;
+		console.log(event);
+		
+		// setting the color to the variable hue
+		ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+
+		// setup for the drawing and starts
+		ctx.beginPath();
+		
+		// start from
+		ctx.moveTo(lastX, lastY);
+		
+		// go to
+		ctx.lineTo(event.offsetX, event.offsetY);
+		ctx.stroke();
+		[lastX, lastY] = [event.offsetX, event.offsetY];
+
+		// add one to the hue to get the variable hue colors
+		hue++;
+
+		// to reset the hue colors if it goes over the 360 availble colors
+		if(hue >= 360) {
+			hue = 0;
+		}
+
+		if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+			direction = !direction;
+		}
+
+		if(direction) {
+			ctx.lineWidth++;
+		} else {
+			ctx.lineWidth--;
+		}
+
+	};
+
+	canvas.addEventListener('mousedown', (event) => {
+		isDrawing = true;
+		[lastX, lastY] = [event.offsetX, event.offsetY];	
+	});
+	
+
+	canvas.addEventListener('mousemove', draw);
+	canvas.addEventListener('mouseup', () => isDrawing = false);
+	canvas.addEventListener('mouseout', () => isDrawing = false);
+
 </script>
 
 <style>
