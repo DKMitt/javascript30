@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>14 Must Know Dev Tools Tricks - Console Tricks!</title>
+</head>
+<body>
+
+  <!-- by clicking text turn green and larger font size -->
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    // function makes text turn green and larger font size
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular - display to the console log
+        console.log('hello');
+
+    // Interpolated - combine a second value into a string to the console log
+        console.log('Hello I am a %s string!', '💩');
+
+        //same as above but using ES6
+        console.log(`Hello I am a ${'💩'} string done in ES6`);
+        console.log(' ');
+
+    // Styled - using CSS to style the console log
+        console.log('%c I am some GREAT Text !', 'font-size: 25px; background: blue; color: white; padding: 5px 15px; margin: 10px;');
+        console.log(' ');
+
+    // warning!  display message with warning message
+        console.warn('OH NOOO!');
+
+    // Error :| display message with error message
+        console.error('Oh Poop!');
+
+    // Info
+        console.info('Ada Lovelace, the daughter of the English poet Lord Byron, is considered to be the first computer programmer.');
+
+    // Testing
+        // will check to see if equation is true and will provide response only if not true
+        console.assert(1 === 1, 'That is wrong!');
+
+        // here equation is not treu and will provide response
+        console.assert(1 === 2, 'That is wrong! Equation is Not Valid');
+
+        // you can test for something and if it is false it will give error message
+        const p =document.querySelector('p');
+
+        console.assert(p.classList.contains('ouch'), 'That is wrong! It is False!');
+
+    // Clearing
+        // clears console screen
+        // console.clear();
+
+    // Viewing DOM Elements
+        // show the DOM element in the console.log
+        console.log(p);
+
+        // shows all the methodes and properties that live in that element
+        console.dir(p);
+
+        // console.clear();
+
+    // Grouping together
+        // this shows grouping the data 
+        dogs.forEach(dog => {
+          console.log(`This is ${dog.name}`);
+          console.log(`${dog.name} is ${dog.age} years old`);
+          console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+        });
+        console.log(' ');
+
+        // using the open and close group tags for grouping data with it beig collapsed
+        dogs.forEach(dog => {
+          console.groupCollapsed(`${dog.name}`);
+          console.log(`This is ${dog.name}`);
+          console.log(`${dog.name} is ${dog.age} years old`);
+          console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+          console.groupEnd(`${dog.name}`);
+        });        
+        console.log(' ');
+
+        // using the open and close group tags for grouping data with it being opened
+        dogs.forEach(dog => {
+          console.group(`${dog.name}`);
+          console.log(`This is ${dog.name}`);
+          console.log(`${dog.name} is ${dog.age} years old`);
+          console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+          console.groupEnd(`${dog.name}`);
+        });
+        console.log(' ');
+
+    // counting
+        // console.count with count the number of time as word, number, object, DOM node or element appear
+        console.count('wes');
+        console.count('wes');
+        console.count('wes');
+        console.count('wes');
+        console.count('wes');
+
+        console.log(' ');
+
+        console.count('bill');
+        console.count('bill');
+        console.count('bill');
+        console.count('bill');
+
+    // timing
+      // if you want to see how long something takes to load or run
+        console.time('fetching data');
+        fetch('https://api.github.com/users/DKMitt')
+          .then(data => data.json())
+          .then(data => {
+            console.timeEnd('fetching data');
+            console.log(data);
+          });
+
+        console.log(' ');          
+
+    // tables
+      // display data in a table 
+      console.table(dogs);
+
+  </script>
+</body>
+</html>

@@ -35,7 +35,7 @@ Listed are the JavaScript 30 Challenges, and as they are completed i will be inc
 | Day 06 | [Type Ahead](https://github.com/DKMitt/javascript30/tree/master/Day-06-Type-Ahead "Type Ahead")                                                     |
 | Day 07 | [Array Cardio Day 2](https://github.com/DKMitt/javascript30/tree/master/Day-07-Array-Cardio-Day-2 "Array Cardio Day 2")                             |
 | Day 08 | [Fun with HTML5 Canvas](https://github.com/DKMitt/javascript30/tree/master/Day-08-Fun-with-HTML5-Canvas "Fun with HTML5 Canvas")                    |
-| Day 09 | Dev Tools Domination                                                                                                                                |
+| Day 09 | [14 Must Know Dev Tools Tricks](https://github.com/DKMitt/javascript30/tree/master/Day-09-14-Must-Know-Dev-Tools-Tricks "14 Must Know Dev Tools Tricks")        |
 | Day 10 | Hold Shift and Check Checkboxes                                                                                                                     |
 | Day 11 | Custom Video Player                                                                                                                                 |
 | Day 12 | Key Sequence Detection                                                                                                                              |
