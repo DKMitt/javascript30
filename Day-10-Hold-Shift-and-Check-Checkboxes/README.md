@@ -11,4 +11,4 @@ Take the challenge at [JavaScript 30 Website](http://www.javascript30.com)
 
 ### [DEMO of JavaScript 30  - Day 10 - Hold Shift to Check Multiple Checkboxes](http://www.dkmitt.com/mycoding/JavaScript30/Day-10-Hold-Shift-and-Check-Checkboxes/)
 
-Directions: 
+Directions: click one checkbox with your mouse and then move several checkboxes away and hold down the shift key and then click the checkbox to have all of the checkboxes inbetween clicked or selected.
