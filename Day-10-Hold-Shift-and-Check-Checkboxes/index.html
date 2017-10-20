@@ -51,7 +51,6 @@
       border-left: 1px solid #D1E2FF;
     }
 
-
   </style>
    <!--
    The following is a common layout you would see in an email client.
@@ -99,6 +98,38 @@
   </div>
 
 <script>
+
+	const checkboxes = document.querySelectorAll('.inbox input[type = "checkbox"]');
+
+	let lastChecked;
+
+	function handleCheck(event) {
+
+		// check if the shift key is down and if it is being checked
+
+		let inBetween = false;
+
+		if(event.shiftKey && this.checked) {
+			// from the begining will check each checkbox to see if checked and then move to the next and 
+			// select all uncheck checkboxes inbetween the first and last found checked checkbox.
+			checkboxes.forEach(checkbox => {
+				console.log(checkbox);
+				if (checkbox === this || checkbox === lastChecked) {
+					inBetween = !inBetween;
+					console.log('Stating to check them inBetween!');
+				}
+
+				if (inBetween) {
+					checkbox.checked = true;
+				}
+			});
+		}
+
+		lastChecked = this;
+	}
+
+	checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+
 </script>
 </body>
 </html>
